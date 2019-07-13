@@ -4,17 +4,28 @@
   "description": "tree view for React",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint '**/*.js'",
+    "lint:fix" : "prettier-eslint '**/*.js' --write"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hcsgzh/react-treeview-simple.git"
   },
-  "keywords": ["react", "tree", "treeview"],
+  "keywords": [
+    "react",
+    "tree",
+    "treeview"
+  ],
   "author": "Hugh Shangguan",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hcsgzh/react-treeview-simple/issues"
   },
-  "homepage": "https://github.com/hcsgzh/react-treeview-simple#readme"
+  "homepage": "https://github.com/hcsgzh/react-treeview-simple#readme",
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-plugin-react": "^7.14.2",
+    "prettier-eslint": "^9.0.0",
+    "prettier-eslint-cli": "^5.0.0"
+  }
 }
