@@ -1,0 +1,20 @@
+{
+  "name": "react-treeview-simple",
+  "version": "1.0.0",
+  "description": "tree view for React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hcsgzh/react-treeview-simple.git"
+  },
+  "keywords": ["react", "tree", "treeview"],
+  "author": "Hugh Shangguan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hcsgzh/react-treeview-simple/issues"
+  },
+  "homepage": "https://github.com/hcsgzh/react-treeview-simple#readme"
+}
