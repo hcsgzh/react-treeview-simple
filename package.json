@@ -1,11 +1,18 @@
 {
   "name": "react-treeview-simple",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "tree view for React",
-  "main": "index.js",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "lint": "eslint '**/*.js'",
-    "lint:fix" : "prettier-eslint '**/*.js' --write"
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "lint": "npx eslint .\\src\\**\\*.js",
+    "lint:fix": "npx prettier-eslint .\\src\\**\\*.js --write"
   },
   "repository": {
     "type": "git",
@@ -23,9 +30,39 @@
   },
   "homepage": "https://github.com/hcsgzh/react-treeview-simple#readme",
   "devDependencies": {
-    "eslint": "^6.0.1",
-    "eslint-plugin-react": "^7.14.2",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^23.0.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-standard": "^4.0.1",
     "prettier-eslint": "^9.0.0",
-    "prettier-eslint-cli": "^5.0.0"
+    "prettier-eslint-cli": "^5.0.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-test-renderer": "^16.11.0",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.26.3",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-string": "^3.0.0",
+    "rollup-plugin-terser": "^5.1.2",
+    "sass-loader": "^8.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.4"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "styled-components": "^4.4.1"
   }
 }

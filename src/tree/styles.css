@@ -1,0 +1,72 @@
+@keyframes lds-Tree {
+    0% {
+      background: #2343fd;
+    }
+    12.5% {
+      background: #2343fd;
+    }
+    12.625% {
+      background: #119fec;
+    }
+    100% {
+      background: #119fec;
+    }
+  }
+  @-webkit-keyframes lds-Tree {
+    0% {
+      background: #2343fd;
+    }
+    12.5% {
+      background: #2343fd;
+    }
+    12.625% {
+      background: #119fec;
+    }
+    100% {
+      background: #119fec;
+    }
+  }
+  .lds-Tree {
+    position: relative;
+  }
+  .lds-Tree div {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #119fec;
+    -webkit-animation: lds-Tree 1s linear infinite;
+    animation: lds-Tree 1s linear infinite;
+  }
+  .lds-Tree {
+    width: 100px !important;
+    height: 100px !important;
+    -webkit-transform: translate(-50px, -50px) scale(0.5) translate(50px, 50px);
+    transform: translate(-50px, -50px) scale(0.5) translate(50px, 50px);
+  }
+  .lds-Tree div:nth-child(1) {
+    left:38px;
+    top:38px;
+    animation-delay:0s;
+  }
+  .lds-Tree div:nth-child(2) {
+    left:80px;top:38px;animation-delay:0.125;
+  }
+  .lds-Tree div:nth-child(3) {
+    left:122px;top:38px;animation-delay:0.25s;
+  }
+  .lds-Tree div:nth-child(4) {
+    left:38px;top:80px;animation-delay:0.875s;
+  }
+  .lds-Tree div:nth-child(5) {
+    left:122px;top:80px;animation-delay:0.375s;
+  }
+  .lds-Tree div:nth-child(6) {
+    left:38px;top:122px;animation-delay:0.75s;
+  }
+  .lds-Tree div:nth-child(7) {
+    left:80px;top:122px;animation-delay:0.625s;
+  }
+  .lds-Tree div:nth-child(8) {
+    left:122px;top:122px;animation-delay:0.5s;
+  }
+  
